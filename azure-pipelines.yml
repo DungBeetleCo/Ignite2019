@@ -23,8 +23,8 @@ steps:
 
 - task: BatchScript@1
   inputs:
-    filename: '/src/PokerLeagueManager.UI.Web/BuildAngular.bat'
-
+    filename: '$(Build.SourcesDirectory)/src/PokerLeagueManager.UI.Web/BuildAngular.bat'
+    
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
